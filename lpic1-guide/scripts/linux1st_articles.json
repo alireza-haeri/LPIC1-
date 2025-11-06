@@ -1,0 +1,174 @@
+[
+  {
+    "title": "Know your LPIC1 version 5 exam",
+    "url": "https://linux1st.com./know-your-lpic1-version-5-exam.html"
+  },
+  {
+    "title": "Prepare your Lab",
+    "url": "https://linux1st.com./prepare-your-lab.html"
+  },
+  {
+    "title": "101.1 Determine and configure hardware settings",
+    "url": "https://linux1st.com./1011-determine-and-configure-hardware-settings.html"
+  },
+  {
+    "title": "101.2 Boot the System",
+    "url": "https://linux1st.com./1012-boot-the-system.html"
+  },
+  {
+    "title": "101.3 Change runlevels / boot targets and shutdown or reboot the system",
+    "url": "https://linux1st.com./1013-change-runlevels-boot-targets-and-shutdown-or-reboot-the-system.html"
+  },
+  {
+    "title": "102.1 Design hard disk layout",
+    "url": "https://linux1st.com./1021-design-hard-disk-layout.html"
+  },
+  {
+    "title": "102.2 Install a boot manager",
+    "url": "https://linux1st.com./1022-install-a-boot-manager.html"
+  },
+  {
+    "title": "102.3 Manage shared libraries",
+    "url": "https://linux1st.com./1023-manage-shared-libraries.html"
+  },
+  {
+    "title": "102.4 Use Debian package management",
+    "url": "https://linux1st.com./1024-use-debian-package-management.html"
+  },
+  {
+    "title": "102.5 Use RPM and YUM package management",
+    "url": "https://linux1st.com./1025-use-rpm-and-yum-package-management.html"
+  },
+  {
+    "title": "102.6 Linux as a virtualization guest",
+    "url": "https://linux1st.com./1026-linux-as-a-virtualization-guest.html"
+  },
+  {
+    "title": "103.1 Work on the command line",
+    "url": "https://linux1st.com./1031-work-on-the-command-line.html"
+  },
+  {
+    "title": "103.2 Process text streams using filters",
+    "url": "https://linux1st.com./1032-process-text-streams-using-filters.html"
+  },
+  {
+    "title": "103.3 Perform basic file management",
+    "url": "https://linux1st.com./1033-perform-basic-file-management.html"
+  },
+  {
+    "title": "103.4 Use streams, pipes, and redirects",
+    "url": "https://linux1st.com./1034-use-streams-pipes-and-redirects.html"
+  },
+  {
+    "title": "103.5 Create, monitor, and kill processes",
+    "url": "https://linux1st.com./1035-create-monitor-and-kill-processes.html"
+  },
+  {
+    "title": "103.6 Modify process execution priorities",
+    "url": "https://linux1st.com./1036-modify-process-execution-priorities.html"
+  },
+  {
+    "title": "103.8 Basic file editing",
+    "url": "https://linux1st.com./1038-basic-file-editing.html"
+  },
+  {
+    "title": "104.1 Create partitions and filesystems",
+    "url": "https://linux1st.com./1041-create-partitions-and-filesystems.html"
+  },
+  {
+    "title": "104.2 Maintain the integrity of filesystems",
+    "url": "https://linux1st.com./1042-maintain-the-integrity-of-filesystems.html"
+  },
+  {
+    "title": "104.3 Control mounting and unmounting of filesystems",
+    "url": "https://linux1st.com./1043-control-mounting-and-unmounting-of-filesystems.html"
+  },
+  {
+    "title": "104.5 Manage file permissions and ownership",
+    "url": "https://linux1st.com./1045-manage-file-permissions-and-ownership.html"
+  },
+  {
+    "title": "104.6 Create and change hard and symbolic links",
+    "url": "https://linux1st.com./1046-create-and-change-hard-and-symbolic-links.html"
+  },
+  {
+    "title": "104.7 Find system files and place files in the correct location",
+    "url": "https://linux1st.com./1047-find-system-files-and-place-files-in-the-correct-location.html"
+  },
+  {
+    "title": "105.1 Customize and use the shell environment",
+    "url": "https://linux1st.com./1051-customize-and-use-the-shell-environment.html"
+  },
+  {
+    "title": "105.2 Customize or write simple scripts",
+    "url": "https://linux1st.com./1052-customize-or-write-simple-scripts.html"
+  },
+  {
+    "title": "106.1 Install and configure X11",
+    "url": "https://linux1st.com./1061-install-and-configure-x11.html"
+  },
+  {
+    "title": "106.2 Graphical Desktops",
+    "url": "https://linux1st.com./1062-graphical-desktops.html"
+  },
+  {
+    "title": "106.3 Accessibility",
+    "url": "https://linux1st.com./1063-accessibility.html"
+  },
+  {
+    "title": "107.1 Manage user and group accounts and related system files",
+    "url": "https://linux1st.com./1071-manage-user-and-group-accounts-and-related-system-files.html"
+  },
+  {
+    "title": "107.2 Automate system administration tasks by scheduling jobs",
+    "url": "https://linux1st.com./1072-automate-system-administration-tasks-by-scheduling-jobs.html"
+  },
+  {
+    "title": "107.3 Localisation and internationalisation",
+    "url": "https://linux1st.com./1073-localisation-and-internationalisation.html"
+  },
+  {
+    "title": "108.1 Maintain system time",
+    "url": "https://linux1st.com./1081-maintain-system-time.html"
+  },
+  {
+    "title": "108.2 System logging",
+    "url": "https://linux1st.com./1082-system-logging.html"
+  },
+  {
+    "title": "108.3 Mail Transfer Agent (MTA) basics",
+    "url": "https://linux1st.com./1083-mail-transfer-agent-mta-basics.html"
+  },
+  {
+    "title": "108.4 Manage printers and printing",
+    "url": "https://linux1st.com./1084-manage-printers-and-printing.html"
+  },
+  {
+    "title": "109.1 Fundamentals of internet protocols",
+    "url": "https://linux1st.com./1091-fundamentals-of-internet-protocols.html"
+  },
+  {
+    "title": "109.2 Persistent network configuration",
+    "url": "https://linux1st.com./1092-persistent-network-configuration.html"
+  },
+  {
+    "title": "109.3 Basic network troubleshooting",
+    "url": "https://linux1st.com./1093-basic-network-troubleshooting.html"
+  },
+  {
+    "title": "109.4 Configure client side DNS",
+    "url": "https://linux1st.com./1094-configure-client-side-dns.html"
+  },
+  {
+    "title": "110.1 Perform security administration tasks",
+    "url": "https://linux1st.com./1101-perform-security-administration-tasks.html"
+  },
+  {
+    "title": "110.2 Setup host security",
+    "url": "https://linux1st.com./1102-setup-host-security.html"
+  },
+  {
+    "title": "110.3 Securing data with encryption",
+    "url": "https://linux1st.com./1103-securing-data-with-encryption.html"
+  }
+]
