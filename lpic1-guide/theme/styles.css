@@ -1,0 +1,351 @@
+/**
+ * Custom RTL Styles for LPIC-1 Persian Documentation
+ * Optimized for right-to-left Persian content
+ */
+
+/* Root Variables */
+:root {
+  --md-primary-fg-color: #3f51b5;
+  --md-primary-fg-color--light: #5c6bc0;
+  --md-primary-fg-color--dark: #303f9f;
+  --md-accent-fg-color: #536dfe;
+  
+  /* Custom colors for Persian content */
+  --persian-text-color: #2c3e50;
+  --persian-heading-color: #1a237e;
+  --persian-link-color: #3f51b5;
+  --persian-code-bg: #f5f7fa;
+  --persian-border-color: #e0e0e0;
+}
+
+/* RTL Typography Enhancement */
+html[dir="rtl"] {
+  font-family: "Vazirmatn", "Tahoma", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+html[dir="rtl"] body {
+  text-align: right;
+  direction: rtl;
+}
+
+/* Headers with Better Persian Typography */
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4,
+html[dir="rtl"] h5,
+html[dir="rtl"] h6 {
+  font-family: "Vazirmatn", sans-serif;
+  font-weight: 700;
+  color: var(--persian-heading-color);
+  letter-spacing: 0;
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+html[dir="rtl"] h1 {
+  font-size: 2.25em;
+  border-bottom: 3px solid var(--md-primary-fg-color);
+  padding-bottom: 0.3em;
+}
+
+html[dir="rtl"] h2 {
+  font-size: 1.85em;
+  border-bottom: 2px solid var(--persian-border-color);
+  padding-bottom: 0.25em;
+}
+
+html[dir="rtl"] h3 {
+  font-size: 1.5em;
+  color: var(--md-primary-fg-color--dark);
+}
+
+/* Paragraph Spacing */
+html[dir="rtl"] p {
+  margin-bottom: 1.2em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Lists RTL Enhancement */
+html[dir="rtl"] ul,
+html[dir="rtl"] ol {
+  padding-right: 2em;
+  padding-left: 0;
+  margin: 1em 0;
+}
+
+html[dir="rtl"] li {
+  margin-bottom: 0.5em;
+  line-height: 1.7;
+}
+
+/* Code Blocks */
+html[dir="rtl"] code {
+  direction: ltr;
+  text-align: left;
+  font-family: "Fira Code", "Monaco", "Courier New", monospace;
+  background-color: var(--persian-code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+html[dir="rtl"] pre {
+  direction: ltr;
+  text-align: left;
+  background-color: var(--persian-code-bg);
+  border-radius: 6px;
+  padding: 1em;
+  overflow-x: auto;
+  border-left: 4px solid var(--md-primary-fg-color);
+  margin: 1.5em 0;
+}
+
+html[dir="rtl"] pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Tables RTL */
+html[dir="rtl"] table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  direction: rtl;
+}
+
+html[dir="rtl"] th {
+  background-color: var(--md-primary-fg-color);
+  color: white;
+  font-weight: 700;
+  padding: 0.75em;
+  text-align: right;
+}
+
+html[dir="rtl"] td {
+  padding: 0.75em;
+  border-bottom: 1px solid var(--persian-border-color);
+  text-align: right;
+}
+
+html[dir="rtl"] tr:hover {
+  background-color: rgba(63, 81, 181, 0.05);
+}
+
+/* Links */
+html[dir="rtl"] a {
+  color: var(--persian-link-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+html[dir="rtl"] a:hover {
+  border-bottom-color: var(--persian-link-color);
+}
+
+/* Navigation Sidebar */
+html[dir="rtl"] .md-sidebar--primary {
+  right: 0;
+  left: auto;
+}
+
+html[dir="rtl"] .md-sidebar--secondary {
+  left: 0;
+  right: auto;
+}
+
+/* Navigation Items */
+html[dir="rtl"] .md-nav__item {
+  padding: 0;
+}
+
+html[dir="rtl"] .md-nav__link {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+/* Search Box */
+html[dir="rtl"] .md-search__input {
+  text-align: right;
+  padding-right: 3rem;
+  padding-left: 1rem;
+}
+
+html[dir="rtl"] .md-search__icon[for="__search"] {
+  right: 0.6rem;
+  left: auto;
+}
+
+/* Admonitions (Notes, Warnings, etc.) */
+html[dir="rtl"] .admonition {
+  margin: 1.5em 0;
+  padding: 0.75em 1em;
+  border-right: 4px solid var(--md-primary-fg-color);
+  border-left: none;
+  border-radius: 0 6px 6px 0;
+  background-color: rgba(63, 81, 181, 0.05);
+}
+
+html[dir="rtl"] .admonition.warning {
+  border-right-color: #ff9800;
+  background-color: rgba(255, 152, 0, 0.05);
+}
+
+html[dir="rtl"] .admonition.danger {
+  border-right-color: #f44336;
+  background-color: rgba(244, 67, 54, 0.05);
+}
+
+html[dir="rtl"] .admonition.success {
+  border-right-color: #4caf50;
+  background-color: rgba(76, 175, 80, 0.05);
+}
+
+/* Blockquotes */
+html[dir="rtl"] blockquote {
+  border-right: 4px solid var(--md-primary-fg-color);
+  border-left: none;
+  padding-right: 1em;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 1.5em;
+  font-style: italic;
+  color: #666;
+}
+
+/* Content Area Padding */
+html[dir="rtl"] .md-content {
+  padding: 0 1.5rem;
+}
+
+/* Horizontal Rules */
+html[dir="rtl"] hr {
+  border: none;
+  border-top: 2px solid var(--persian-border-color);
+  margin: 2em 0;
+}
+
+/* Checkboxes in Task Lists */
+html[dir="rtl"] .task-list-item {
+  list-style: none;
+}
+
+html[dir="rtl"] .task-list-item input[type="checkbox"] {
+  margin-left: 0.5em;
+  margin-right: 0;
+}
+
+/* Badges and Labels */
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.6em;
+  font-size: 0.85em;
+  font-weight: 600;
+  line-height: 1;
+  color: white;
+  background-color: var(--md-primary-fg-color);
+  border-radius: 12px;
+  margin: 0 0.25em;
+}
+
+/* Emoji Support */
+.emoji {
+  height: 1.2em;
+  width: 1.2em;
+  vertical-align: middle;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 76.1875em) {
+  html[dir="rtl"] .md-sidebar--primary {
+    transform: translateX(100%);
+  }
+  
+  html[dir="rtl"] .md-sidebar--primary[data-md-state="open"] {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 60em) {
+  html[dir="rtl"] .md-content {
+    padding: 0 1rem;
+  }
+  
+  html[dir="rtl"] h1 {
+    font-size: 1.85em;
+  }
+  
+  html[dir="rtl"] h2 {
+    font-size: 1.5em;
+  }
+}
+
+/* Print Styles */
+@media print {
+  html[dir="rtl"] {
+    font-size: 12pt;
+  }
+  
+  html[dir="rtl"] pre,
+  html[dir="rtl"] code {
+    border: 1px solid #ccc;
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection Color */
+::selection {
+  background-color: var(--md-primary-fg-color);
+  color: white;
+}
+
+/* Focus Styles */
+a:focus,
+button:focus,
+input:focus {
+  outline: 2px solid var(--md-accent-fg-color);
+  outline-offset: 2px;
+}
+
+/* Footer Customization */
+.md-footer-copyright__highlight {
+  font-weight: 700;
+  color: var(--md-primary-fg-color);
+  margin-bottom: 0.5em;
+}
+
+/* Custom Alert Boxes */
+.alert {
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 6px;
+  border-right: 4px solid;
+}
+
+.alert-info {
+  background-color: rgba(33, 150, 243, 0.1);
+  border-right-color: #2196f3;
+}
+
+.alert-warning {
+  background-color: rgba(255, 152, 0, 0.1);
+  border-right-color: #ff9800;
+}
+
+.alert-success {
+  background-color: rgba(76, 175, 80, 0.1);
+  border-right-color: #4caf50;
+}
+
+.alert-danger {
+  background-color: rgba(244, 67, 54, 0.1);
+  border-right-color: #f44336;
+}

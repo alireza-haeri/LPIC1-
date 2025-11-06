@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+<!-- Custom RTL Styles -->
+{% block styles %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ 'theme/styles.css'|url }}">
+  <!-- Vazirmatn Font from CDN -->
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+{% endblock %}
+
+<!-- Custom Scripts -->
+{% block scripts %}
+  {{ super() }}
+  <script src="{{ 'theme/script.js'|url }}"></script>
+{% endblock %}
+
+<!-- Custom Header -->
+{% block header %}
+  {{ super() }}
+{% endblock %}
+
+<!-- Custom Footer -->
+{% block footer %}
+  <footer class="md-footer">
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <div class="md-footer-copyright">
+          <div class="md-footer-copyright__highlight">
+            ساخته شده با ❤️ برای جامعه لینوکس ایران
+          </div>
+          {% if config.copyright %}
+            <div class="md-footer-copyright__content">
+              {{ config.copyright }}
+            </div>
+          {% endif %}
+        </div>
+        {% include "partials/social.html" %}
+      </div>
+    </div>
+  </footer>
+{% endblock %}
