@@ -17,9 +17,8 @@ theme:
   
   # Color Palette
   palette:
-    # Light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
+    # Light mode (default)
+    - scheme: default
       primary: indigo
       accent: indigo
       toggle:
@@ -27,8 +26,7 @@ theme:
         name: حالت تاریک
     
     # Dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+    - scheme: slate
       primary: indigo
       accent: indigo
       toggle:
@@ -44,6 +42,7 @@ theme:
     - navigation.expand       # Expand navigation by default
     - navigation.top          # Back to top button
     - navigation.indexes      # Section index pages
+    - navigation.footer       # Previous/next navigation in footer
     - search.suggest          # Search suggestions
     - search.highlight        # Highlight search results
     - search.share           # Share search results
@@ -114,8 +113,10 @@ markdown_extensions:
 # Navigation
 nav:
   - خانه: index.md
-  - مبانی لینوکس: basics.md
-  - مجوزهای فایل: permissions.md
+  - فهرست دروس: lessons.md
+  - دروس:
+    - مبانی لینوکس: basics.md
+    - مجوزهای فایل: permissions.md
 
 # Plugins
 plugins:

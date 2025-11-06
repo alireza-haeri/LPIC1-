@@ -19,23 +19,12 @@
   {{ super() }}
 {% endblock %}
 
-<!-- Custom Footer -->
+<!-- Custom Footer - Keep navigation and customize meta -->
 {% block footer %}
-  <footer class="md-footer">
-    <div class="md-footer-meta md-typeset">
-      <div class="md-footer-meta__inner md-grid">
-        <div class="md-footer-copyright">
-          <div class="md-footer-copyright__highlight">
-            ساخته شده با ❤️ برای جامعه لینوکس ایران
-          </div>
-          {% if config.copyright %}
-            <div class="md-footer-copyright__content">
-              {{ config.copyright }}
-            </div>
-          {% endif %}
-        </div>
-        {% include "partials/social.html" %}
-      </div>
-    </div>
-  </footer>
+  {{ super() }}
+{% endblock %}
+
+<!-- Customize footer copyright -->
+{% block content %}
+  {{ super() }}
 {% endblock %}
