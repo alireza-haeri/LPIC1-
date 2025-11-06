@@ -1,0 +1,686 @@
+/**
+ * Custom RTL Styles for LPIC-1 Persian Documentation
+ * Optimized for right-to-left Persian content
+ */
+
+/* Root Variables - Modern Design */
+:root {
+  --md-primary-fg-color: #4E8EF7;
+  --md-primary-fg-color--light: #6FA4F9;
+  --md-primary-fg-color--dark: #3A6FD8;
+  --md-accent-fg-color: #4E8EF7;
+  
+  /* Custom colors for Persian content */
+  --persian-text-color: #1a1a1a;
+  --persian-heading-color: #0d1b2a;
+  --persian-link-color: #4E8EF7;
+  --persian-code-bg: #f8f9fa;
+  --persian-border-color: #dee2e6;
+  --persian-shadow: rgba(0, 0, 0, 0.08);
+  --persian-hover-bg: rgba(78, 142, 247, 0.1);
+  --persian-card-bg: #ffffff;
+  --persian-card-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Dark mode variables */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #5A9DFF;
+  --md-primary-fg-color--light: #7AB3FF;
+  --md-primary-fg-color--dark: #3A7EE8;
+  --persian-text-color: #e8e8e8;
+  --persian-heading-color: #b8d4ff;
+  --persian-code-bg: #1e1e1e;
+  --persian-border-color: #3a3a3a;
+  --persian-shadow: rgba(0, 0, 0, 0.4);
+  --persian-hover-bg: rgba(90, 157, 255, 0.15);
+  --persian-card-bg: #2a2a2a;
+  --persian-card-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* RTL Typography Enhancement */
+html[dir="rtl"] {
+  font-family: "Vazirmatn", "Tahoma", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+html[dir="rtl"] body {
+  text-align: right;
+  direction: rtl;
+}
+
+/* Headers with Better Persian Typography - Modern Style */
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4,
+html[dir="rtl"] h5,
+html[dir="rtl"] h6 {
+  font-family: "Vazirmatn", sans-serif;
+  font-weight: 700;
+  color: var(--persian-heading-color);
+  letter-spacing: 0;
+  margin-top: 1.8em;
+  margin-bottom: 0.8em;
+  line-height: 1.4;
+}
+
+html[dir="rtl"] h1 {
+  font-size: 2.25em;
+  border-bottom: 3px solid var(--md-primary-fg-color);
+  padding-bottom: 0.4em;
+  margin-bottom: 1em;
+  box-shadow: 0 2px 0 var(--persian-shadow);
+}
+
+html[dir="rtl"] h2 {
+  font-size: 1.85em;
+  border-bottom: 2px solid var(--persian-border-color);
+  padding-bottom: 0.3em;
+  margin-bottom: 0.9em;
+}
+
+html[dir="rtl"] h3 {
+  font-size: 1.5em;
+  color: var(--md-primary-fg-color--dark);
+  margin-bottom: 0.7em;
+}
+
+/* Paragraph Spacing - Modern */
+html[dir="rtl"] p {
+  margin-bottom: 1.3em;
+  text-align: right;
+  line-height: 1.9;
+}
+
+/* Lists RTL Enhancement */
+html[dir="rtl"] ul,
+html[dir="rtl"] ol {
+  padding-right: 2em;
+  padding-left: 0;
+  margin: 1em 0;
+}
+
+html[dir="rtl"] li {
+  margin-bottom: 0.5em;
+  line-height: 1.7;
+}
+
+/* Code Blocks - Always LTR, Modern Style */
+html[dir="rtl"] code,
+code {
+  direction: ltr !important;
+  text-align: left !important;
+  font-family: "Fira Code", "JetBrains Mono", "Monaco", "Courier New", monospace;
+  background-color: var(--persian-code-bg);
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+  font-size: 0.88em;
+  font-weight: 400;
+}
+
+html[dir="rtl"] pre,
+pre {
+  direction: ltr !important;
+  text-align: left !important;
+  background-color: var(--persian-code-bg);
+  border-radius: 8px;
+  padding: 1.2em;
+  overflow-x: auto;
+  border-left: 4px solid var(--md-primary-fg-color);
+  margin: 1.5em 0;
+  box-shadow: 0 2px 8px var(--persian-shadow);
+}
+
+html[dir="rtl"] pre code,
+pre code {
+  background-color: transparent;
+  padding: 0;
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+/* Tables RTL */
+html[dir="rtl"] table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  direction: rtl;
+}
+
+html[dir="rtl"] th {
+  background-color: var(--md-primary-fg-color);
+  color: white;
+  font-weight: 700;
+  padding: 0.75em;
+  text-align: right;
+}
+
+html[dir="rtl"] td {
+  padding: 0.75em;
+  border-bottom: 1px solid var(--persian-border-color);
+  text-align: right;
+}
+
+html[dir="rtl"] tr:hover {
+  background-color: rgba(63, 81, 181, 0.05);
+}
+
+/* Links - Modern Interactive Style */
+html[dir="rtl"] a {
+  color: var(--persian-link-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+html[dir="rtl"] a:hover {
+  border-bottom-color: var(--persian-link-color);
+  color: var(--md-primary-fg-color--dark);
+}
+
+.md-content a {
+  position: relative;
+}
+
+.md-content a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  right: 0;
+  background-color: var(--md-primary-fg-color);
+  transition: width 0.3s ease;
+}
+
+.md-content a:hover::after {
+  width: 100%;
+}
+
+/* Navigation Sidebar */
+html[dir="rtl"] .md-sidebar--primary {
+  right: 0;
+  left: auto;
+}
+
+html[dir="rtl"] .md-sidebar--secondary {
+  left: 0;
+  right: auto;
+}
+
+/* Navigation Items */
+html[dir="rtl"] .md-nav__item {
+  padding: 0;
+}
+
+html[dir="rtl"] .md-nav__link {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+/* Search Box */
+html[dir="rtl"] .md-search__input {
+  text-align: right;
+  padding-right: 3rem;
+  padding-left: 1rem;
+}
+
+html[dir="rtl"] .md-search__icon[for="__search"] {
+  right: 0.6rem;
+  left: auto;
+}
+
+/* Admonitions (Notes, Warnings, etc.) */
+html[dir="rtl"] .admonition {
+  margin: 1.5em 0;
+  padding: 0.75em 1em;
+  border-right: 4px solid var(--md-primary-fg-color);
+  border-left: none;
+  border-radius: 0 6px 6px 0;
+  background-color: rgba(63, 81, 181, 0.05);
+}
+
+html[dir="rtl"] .admonition.warning {
+  border-right-color: #ff9800;
+  background-color: rgba(255, 152, 0, 0.05);
+}
+
+html[dir="rtl"] .admonition.danger {
+  border-right-color: #f44336;
+  background-color: rgba(244, 67, 54, 0.05);
+}
+
+html[dir="rtl"] .admonition.success {
+  border-right-color: #4caf50;
+  background-color: rgba(76, 175, 80, 0.05);
+}
+
+/* Blockquotes */
+html[dir="rtl"] blockquote {
+  border-right: 4px solid var(--md-primary-fg-color);
+  border-left: none;
+  padding-right: 1em;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 1.5em;
+  font-style: italic;
+  color: #666;
+}
+
+/* Content Area Padding */
+html[dir="rtl"] .md-content {
+  padding: 0 1.5rem;
+}
+
+/* Horizontal Rules */
+html[dir="rtl"] hr {
+  border: none;
+  border-top: 2px solid var(--persian-border-color);
+  margin: 2em 0;
+}
+
+/* Checkboxes in Task Lists */
+html[dir="rtl"] .task-list-item {
+  list-style: none;
+}
+
+html[dir="rtl"] .task-list-item input[type="checkbox"] {
+  margin-left: 0.5em;
+  margin-right: 0;
+}
+
+/* Badges and Labels */
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.6em;
+  font-size: 0.85em;
+  font-weight: 600;
+  line-height: 1;
+  color: white;
+  background-color: var(--md-primary-fg-color);
+  border-radius: 12px;
+  margin: 0 0.25em;
+}
+
+/* Emoji Support */
+.emoji {
+  height: 1.2em;
+  width: 1.2em;
+  vertical-align: middle;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 76.1875em) {
+  html[dir="rtl"] .md-sidebar--primary {
+    transform: translateX(100%);
+  }
+  
+  html[dir="rtl"] .md-sidebar--primary[data-md-state="open"] {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 60em) {
+  html[dir="rtl"] .md-content {
+    padding: 0 1rem;
+  }
+  
+  html[dir="rtl"] h1 {
+    font-size: 1.85em;
+  }
+  
+  html[dir="rtl"] h2 {
+    font-size: 1.5em;
+  }
+}
+
+/* Print Styles */
+@media print {
+  html[dir="rtl"] {
+    font-size: 12pt;
+  }
+  
+  html[dir="rtl"] pre,
+  html[dir="rtl"] code {
+    border: 1px solid #ccc;
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection Color */
+::selection {
+  background-color: var(--md-primary-fg-color);
+  color: white;
+}
+
+/* Focus Styles */
+a:focus,
+button:focus,
+input:focus {
+  outline: 2px solid var(--md-accent-fg-color);
+  outline-offset: 2px;
+}
+
+/* Footer Customization */
+.md-footer-copyright__highlight {
+  font-weight: 700;
+  color: var(--md-primary-fg-color);
+  margin-bottom: 0.5em;
+}
+
+/* Navigation Footer (Previous/Next) - Modern Style */
+.md-footer__inner {
+  padding: 0.5rem 0;
+}
+
+.md-footer__link {
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background-color: var(--persian-hover-bg);
+}
+
+.md-footer__link:hover {
+  background-color: var(--md-primary-fg-color);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--persian-shadow);
+}
+
+.md-footer__title {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.md-footer__direction {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* Custom Alert Boxes */
+.alert {
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 6px;
+  border-right: 4px solid;
+}
+
+.alert-info {
+  background-color: rgba(33, 150, 243, 0.1);
+  border-right-color: #2196f3;
+}
+
+.alert-warning {
+  background-color: rgba(255, 152, 0, 0.1);
+  border-right-color: #ff9800;
+}
+
+.alert-success {
+  background-color: rgba(76, 175, 80, 0.1);
+  border-right-color: #4caf50;
+}
+
+.alert-danger {
+  background-color: rgba(244, 67, 54, 0.1);
+  border-right-color: #f44336;
+}
+
+/* ================================
+   Modern Landing Page Styles
+   ================================ */
+
+/* Landing Page Hero Section */
+.landing-hero {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  margin: 2rem 0 3rem;
+}
+
+.landing-hero h1 {
+  font-size: 2.8em !important;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: var(--persian-heading-color);
+  line-height: 1.2;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.landing-hero .subtitle {
+  font-size: 1.3em;
+  color: var(--persian-text-color);
+  opacity: 0.85;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* CTA Button */
+.cta-button {
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: white !important;
+  background: linear-gradient(135deg, var(--md-primary-fg-color) 0%, var(--md-primary-fg-color--dark) 100%);
+  border-radius: 50px;
+  text-decoration: none !important;
+  border: none;
+  box-shadow: 0 4px 20px rgba(78, 142, 247, 0.3);
+  transition: all 0.3s ease;
+  margin: 1rem 0;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 30px rgba(78, 142, 247, 0.4);
+  border-bottom: none !important;
+}
+
+.cta-button::after {
+  display: none;
+}
+
+/* ================================
+   Lesson Cards Layout
+   ================================ */
+
+.lessons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.lesson-card {
+  background: var(--persian-card-bg);
+  border-radius: 12px;
+  padding: 1.8rem;
+  box-shadow: var(--persian-card-shadow);
+  border: 1px solid var(--persian-border-color);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.lesson-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--md-primary-fg-color) 0%, var(--md-primary-fg-color--dark) 100%);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease;
+}
+
+.lesson-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: var(--md-primary-fg-color);
+}
+
+.lesson-card:hover::before {
+  transform: scaleY(1);
+}
+
+.lesson-card h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--persian-heading-color);
+  margin: 0 0 1rem 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+.lesson-card .description {
+  color: var(--persian-text-color);
+  opacity: 0.8;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 0.95em;
+}
+
+.lesson-card .read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--md-primary-fg-color);
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+  font-size: 1em;
+}
+
+.lesson-card .read-more:hover {
+  color: var(--md-primary-fg-color--dark);
+  gap: 0.8rem;
+}
+
+.lesson-card .read-more::after {
+  display: none !important;
+}
+
+.lesson-card .read-more .arrow {
+  font-size: 1.2em;
+  transition: transform 0.3s ease;
+}
+
+.lesson-card:hover .read-more .arrow {
+  transform: translateX(3px);
+}
+
+/* Badge for lesson status */
+.lesson-badge {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.75em;
+  font-weight: 600;
+  border-radius: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.lesson-badge.available {
+  background-color: rgba(76, 175, 80, 0.15);
+  color: #2e7d32;
+}
+
+.lesson-badge.coming-soon {
+  background-color: rgba(255, 152, 0, 0.15);
+  color: #e65100;
+}
+
+/* ================================
+   Features Section
+   ================================ */
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 3rem 0;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--persian-card-bg);
+  border-radius: 10px;
+  border: 1px solid var(--persian-border-color);
+  transition: all 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--persian-card-shadow);
+}
+
+.feature-box .icon {
+  font-size: 2.5em;
+  margin-bottom: 1rem;
+}
+
+.feature-box h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 0.5rem 0 !important;
+  border: none !important;
+}
+
+.feature-box p {
+  font-size: 0.9em;
+  opacity: 0.8;
+  margin: 0;
+}
+
+/* ================================
+   Responsive Design
+   ================================ */
+
+@media screen and (max-width: 768px) {
+  .landing-hero h1 {
+    font-size: 2em !important;
+  }
+  
+  .landing-hero .subtitle {
+    font-size: 1.1em;
+  }
+  
+  .cta-button {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1.1em;
+  }
+  
+  .lessons-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .landing-hero {
+    padding: 2rem 1rem;
+  }
+  
+  .landing-hero h1 {
+    font-size: 1.8em !important;
+  }
+  
+  .lesson-card {
+    padding: 1.5rem;
+  }
+}
