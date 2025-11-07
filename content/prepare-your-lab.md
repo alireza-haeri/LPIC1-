@@ -1,26 +1,28 @@
-# آماده‌سازی آزمایشگاه شما
+# Prepare your Lab
 
-تماشای ویدیو یا حتی خواندن کتاب هرگز کافی نیست. شما باید Linux را نصب کرده و دانش جدید خود را تمرین کنید. همانطور که می‌دانید، LPIC یک آزمون **مستقل از توزیع** (distro agnostic) است و یک متخصص دارای گواهی LPIC باید بتواند در هر سیستم GNU/Linux یا حداقل در سیستم‌های اصلی کار کند. به همین دلیل، پیشنهاد می‌کنم دو ماشین Linux داشته باشید که بتوانید روی آنها کار کنید: یکی مبتنی بر RPM و دیگری مبتنی بر Debian.
-
-یک راه رایج استفاده از ماشین مجازی (Virtual Machine) است. می‌توانید چیزی مانند **VirtualBox** (برای Win/Linux و Mac‌های Intel) یا **UTM** (برای Mac‌های M1) یا هر راه‌حل دیگری را نصب کنید تا ماشین‌های آزمایشی خود را در یک ماشین مجازی نصب کنید.
-
-برای توزیع خود، پیشنهاد می‌کنم **Ubuntu** یا **Debian** را به عنوان سیستم مبتنی بر Debian و **Fedora** یا **Rocky Linux** را به عنوان ماشین مبتنی بر RPM انتخاب کنید. می‌توانید هر چیز دیگری نصب کنید و هر کاری که دوست دارید انجام دهید!
-
-اگر می‌خواهید قدم‌های من را دنبال کنید، یک نصب معمولی GUI انجام دهید. من در حال نصب Ubuntu 22.04 هستم:
-
-و اینجا می‌توانید نصب Fedora 36 را دنبال کنید:
-
-**نکته:** نسخه خیلی مهم نیست. من اینجا Fedora 36 و Ubuntu 22.04 را نصب می‌کنم.
-
----
-
-**خلاصه:** برای آماده شدن به آزمون LPIC، به دو ماشین Linux نیاز دارید - یکی مبتنی بر Debian (مانند Ubuntu یا Debian) و یکی مبتنی بر RPM (مانند Fedora یا Rocky Linux). استفاده از ماشین‌های مجازی مانند VirtualBox یا UTM راه مناسبی برای تمرین است. نسخه دقیق توزیع چندان مهم نیست، تمرین و کار عملی اهمیت دارد.
-
----
-
-← آشنایی با آزمون LPIC1 نسخه 5  
-**فهرست فصل‌ها**  
-101.1 تعیین و پیکربندی تنظیمات سخت‌افزار →
-
-**دسته‌بندی:** LPIC1  
-**تماس**
+Watching videos or even reading books is never enough. You need to have Linux installed and practice your newly acquired knowledge. As you may know, LPIC is a
+distro agnostic
+test and an LPIC-certified guru should be able to work in any GNU/Linux system, or at least on the major ones. Because of this, I suggest you have two Linux machines which you can work on. One RPM-based and one Debian-based.
+One common way is to use a Virtual Machine. You can install something like
+VirtualBox
+(for Win/Linux and Intel Macs) or
+UTM
+(for M1 Macs) or any other solution to install your test machines in a Virtual Machine.
+For your distribution, I suggest
+Ubuntu
+or
+Debian
+as your Debian-based system and
+Fedora
+or
+Rocky Linux
+as your RPM-based machine. Feel free to install anything else and do whatever you enjoy!
+If you want to walk in my steps, do a normal GUI installation. Here is me, installing the Ubuntu 22.04:
+And here, you can follow the Fedora 36 installation:
+Note: The version is not that important. Here I'm installing Fedora 36 & Ubuntu 22.04.
+← Know your LPIC1 version 5 exam
+Chapter List
+101.1 Determine and configure hardware settings →
+Category
+LPIC1
+Contact
