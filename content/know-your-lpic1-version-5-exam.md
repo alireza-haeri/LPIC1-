@@ -1,14 +1,10 @@
-# آشنایی با آزمون LPIC1 نسخه 5
+# Know your LPIC1 version 5 exam
 
-این مستند بر اساس **LPIC1 نسخه 5 (آزمون‌های 101-500 و 102-500)** نوشته شده است. این مستند تمام اهداف آزمون را پوشش می‌دهد. هر آزمون LPIC شامل 60 سوال چند گزینه‌ای و پرکردن جاهای خالی است که باید در 90 دقیقه پاسخ داده شوند.
-
-**خلاصه:** آزمون LPIC1 نسخه 5 شامل دو آزمون (101-500 و 102-500) است که هر کدام 60 سوال دارند و زمان پاسخگویی 90 دقیقه است. این دوره تمام موضوعات مورد نیاز برای قبولی در این آزمون را پوشش می‌دهد.
-
----
-
-**فهرست فصل‌ها**  
-آماده‌سازی آزمایشگاه شما ←
-
-**دسته‌بندی:** LPIC1
-
-**تماس**
+This document is written based on
+LPIC1 version 5 (exams 101-500 and 102-500)
+. It covers all the objectives. Each LPIC exam has 60 multiple choice and fill-in-the-blank questions which should be answered in 90 minutes.
+Chapter List
+Prepare your Lab →
+Category
+LPIC1
+Contact

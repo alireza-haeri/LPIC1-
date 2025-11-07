@@ -1,0 +1,152 @@
+site_name: راهنمای جامع LPIC-1
+site_description: مجموعه کامل آموزش LPIC-1 به زبان فارسی
+site_author: LPIC1 Persian Guide
+site_url: https://alireza-haeri.github.io/LPIC1-/
+
+# Build directories
+docs_dir: content
+site_dir: site
+
+# Repository
+repo_name: alireza-haeri/LPIC1-
+repo_url: https://github.com/alireza-haeri/LPIC1-
+edit_uri: edit/main/content/
+
+# Theme Configuration
+theme:
+  name: material
+  custom_dir: site/theme
+  language: fa
+  direction: rtl
+  
+  # Color Palette
+  palette:
+    # Light mode (default)
+    - scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: حالت تاریک
+    
+    # Dark mode
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: حالت روشن
+  
+  # Theme Features
+  features:
+    - navigation.instant      # Instant loading
+    - navigation.tracking     # Anchor tracking
+    - navigation.tabs         # Navigation tabs
+    - navigation.sections     # Navigation sections
+    - navigation.expand       # Expand navigation by default
+    - navigation.top          # Back to top button
+    - navigation.indexes      # Section index pages
+    - navigation.footer       # Previous/next navigation in footer
+    - search.suggest          # Search suggestions
+    - search.highlight        # Highlight search results
+    - search.share           # Share search results
+    - content.code.copy      # Copy code button
+    - content.code.annotate  # Code annotations
+    - toc.follow             # TOC follows scroll
+  
+  # Icons
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/book-open-page-variant
+  
+  # Fonts
+  font:
+    text: Vazirmatn
+    code: Fira Code
+
+# Extra CSS and JavaScript
+extra_css:
+  - assets/css/custom.css
+
+extra_javascript:
+  - assets/js/custom.js
+
+# Extensions
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Navigation
+nav:
+  - خانه: index.md
+  - فهرست دروس: lessons.md
+  - دروس:
+    - مبانی لینوکس: basics.md
+    - مجوزهای فایل: permissions.md
+
+# Plugins
+plugins:
+  - search:
+      lang: 
+        - fa
+        - en
+      separator: '[\s\-\.]+'
+  - minify:
+      minify_html: true
+
+# Extra Configuration
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/alireza-haeri/LPIC1-
+      name: GitHub Repository
+    - icon: fontawesome/brands/linux
+      link: https://www.lpi.org
+      name: Linux Professional Institute
+  
+  # Copyright
+  copyright: Copyright &copy; 2024 LPIC1 Persian Guide
+
+# Use directory URLs
+use_directory_urls: true
+
+# Strict mode
+strict: false
