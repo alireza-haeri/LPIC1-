@@ -16,7 +16,7 @@
 یادگیری تشخیص و پیکربندی سخت‌افزار سیستم، کار با lspci، lsusb، lsmod و مدیریت ماژول‌های کرنل
 </div>
 
-<a href="101/101-1-hardware-settings/" class="read-more">
+<a href="../101/101-1-hardware-settings/" class="read-more">
 مطالعه درس <span class="arrow">←</span>
 </a>
 
