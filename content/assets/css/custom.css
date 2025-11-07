@@ -1,272 +1,297 @@
 /**
- * LPIC-1 Persian Documentation - Enhanced Modern Design
- * Optimized for Persian RTL content with vibrant, professional styling
+ * LPIC-1 Persian Documentation - Professional Enhanced Design
+ * Optimized for Persian RTL content with modern, clean aesthetics
  */
 
 /* ================================
-   Root Variables - Vibrant Modern Colors
+   Root Variables - Professional Color Palette
    ================================ */
 :root {
-  --md-primary-fg-color: #4E8EF7;
-  --md-primary-fg-color--light: #6FA4F9;
-  --md-primary-fg-color--dark: #3A6FD8;
-  --md-accent-fg-color: #FF6B6B;
+  --md-primary-fg-color: #2563eb;
+  --md-primary-fg-color--light: #3b82f6;
+  --md-primary-fg-color--dark: #1e40af;
+  --md-accent-fg-color: #7c3aed;
   
-  /* Enhanced color palette */
-  --persian-text-color: #1a1a1a;
-  --persian-heading-color: #0d1b2a;
-  --persian-link-color: #4E8EF7;
-  --persian-code-bg: #f8f9fa;
-  --persian-code-text: #e83e8c;
-  --persian-code-block-bg: #282c34;
-  --persian-border-color: #dee2e6;
-  --persian-shadow: rgba(0, 0, 0, 0.08);
-  --persian-hover-bg: rgba(78, 142, 247, 0.1);
+  /* Persian content colors */
+  --persian-text-color: #1f2937;
+  --persian-heading-color: #111827;
+  --persian-link-color: #2563eb;
+  --persian-code-inline-bg: #f1f5f9;
+  --persian-code-inline-text: #e11d48;
+  --persian-code-block-bg: #1e293b;
+  --persian-border-color: #e5e7eb;
+  --persian-shadow: rgba(0, 0, 0, 0.1);
+  --persian-hover-bg: rgba(37, 99, 235, 0.08);
   --persian-card-bg: #ffffff;
-  --persian-card-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --persian-card-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   
-  /* Syntax highlighting colors */
+  /* Syntax highlighting - VSCode-like */
   --code-keyword: #c678dd;
   --code-string: #98c379;
   --code-function: #61afef;
-  --code-comment: #5c6370;
+  --code-comment: #7f848e;
   --code-number: #d19a66;
+  --code-operator: #56b6c2;
+  --code-variable: #e06c75;
 }
 
 /* Dark mode variables */
 [data-md-color-scheme="slate"] {
-  --md-primary-fg-color: #5A9DFF;
-  --md-accent-fg-color: #FF8787;
-  --persian-text-color: #e8e8e8;
-  --persian-heading-color: #b8d4ff;
-  --persian-code-bg: #1e1e1e;
-  --persian-code-text: #ff79c6;
-  --persian-code-block-bg: #1e1e1e;
-  --persian-border-color: #3a3a3a;
-  --persian-shadow: rgba(0, 0, 0, 0.4);
-  --persian-hover-bg: rgba(90, 157, 255, 0.15);
-  --persian-card-bg: #2a2a2a;
-  --persian-card-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  --md-primary-fg-color: #3b82f6;
+  --md-accent-fg-color: #8b5cf6;
+  --persian-text-color: #e5e7eb;
+  --persian-heading-color: #f3f4f6;
+  --persian-code-inline-bg: #334155;
+  --persian-code-inline-text: #fb7185;
+  --persian-code-block-bg: #1e293b;
+  --persian-border-color: #374151;
+  --persian-shadow: rgba(0, 0, 0, 0.5);
+  --persian-hover-bg: rgba(59, 130, 246, 0.15);
+  --persian-card-bg: #1f2937;
+  --persian-card-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 /* ================================
    Typography
    ================================ */
 html[dir="rtl"] {
-  font-family: "Vazirmatn", "Tahoma", "Arial", sans-serif;
+  font-family: "Vazirmatn", "Tahoma", sans-serif;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.75;
 }
 
 html[dir="rtl"] body {
   text-align: right;
   direction: rtl;
+  color: var(--persian-text-color);
 }
 
 /* ================================
-   Headers - Enhanced
+   Headers
    ================================ */
 html[dir="rtl"] h1,
 html[dir="rtl"] h2,
 html[dir="rtl"] h3,
-html[dir="rtl"] h4,
-html[dir="rtl"] h5,
-html[dir="rtl"] h6 {
+html[dir="rtl"] h4 {
   font-family: "Vazirmatn", sans-serif;
   font-weight: 700;
   color: var(--persian-heading-color);
-  letter-spacing: 0;
-  margin-top: 1.8em;
+  margin-top: 2em;
   margin-bottom: 0.8em;
-  line-height: 1.4;
+  line-height: 1.3;
 }
 
 html[dir="rtl"] h1 {
   font-size: 2.25em;
-  background: linear-gradient(135deg, var(--md-primary-fg-color) 0%, var(--md-primary-fg-color--dark) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
   border-bottom: 3px solid var(--md-primary-fg-color);
-  padding-bottom: 0.4em;
-  margin-bottom: 1em;
-  position: relative;
-}
-
-html[dir="rtl"] h1::after {
-  content: '';
-  position: absolute;
-  bottom: -3px;
-  right: 0;
-  width: 60px;
-  height: 3px;
-  background: var(--md-accent-fg-color);
-  border-radius: 2px;
+  padding-bottom: 0.5em;
+  margin-bottom: 1.2em;
 }
 
 html[dir="rtl"] h2 {
-  font-size: 1.85em;
+  font-size: 1.75em;
   border-right: 4px solid var(--md-primary-fg-color);
   padding-right: 1rem;
-  margin-bottom: 0.9em;
 }
 
 html[dir="rtl"] h3 {
-  font-size: 1.5em;
+  font-size: 1.4em;
   color: var(--md-primary-fg-color--dark);
-  margin-bottom: 0.7em;
-  position: relative;
-  padding-right: 0.5rem;
-}
-
-html[dir="rtl"] h3::before {
-  content: '▶';
-  color: var(--md-primary-fg-color);
-  position: absolute;
-  right: -1rem;
-  font-size: 0.6em;
-  top: 0.3em;
 }
 
 /* ================================
-   Inline Code - Vibrant Style
+   Inline Code - Modern Badge Style
    ================================ */
 html[dir="rtl"] code,
 code {
-  direction: ltr !important;
-  text-align: left !important;
   font-family: "Fira Code", "JetBrains Mono", monospace;
-  background: linear-gradient(135deg, rgba(78, 142, 247, 0.1) 0%, rgba(255, 107, 107, 0.1) 100%);
-  color: var(--persian-code-text);
-  padding: 0.15em 0.6em;
-  border-radius: 6px;
+  background: var(--persian-code-inline-bg);
+  color: var(--persian-code-inline-text);
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
   font-size: 0.9em;
   font-weight: 600;
-  border: 1px solid rgba(78, 142, 247, 0.2);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(229, 29, 72, 0.2);
+  white-space: nowrap;
   transition: all 0.2s ease;
 }
 
 html[dir="rtl"] code:hover,
 code:hover {
-  background: linear-gradient(135deg, rgba(78, 142, 247, 0.15) 0%, rgba(255, 107, 107, 0.15) 100%);
-  transform: translateY(-1px);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  background: rgba(229, 29, 72, 0.1);
+  border-color: var(--persian-code-inline-text);
+}
+
+/* Fix LTR paths like /sys */
+code {
+  direction: ltr !important;
+  display: inline-block;
+  unicode-bidi: embed;
 }
 
 /* ================================
-   Code Blocks - Syntax Highlighted
+   Code Blocks - Professional Syntax Highlighting
    ================================ */
 html[dir="rtl"] pre,
 pre {
   direction: ltr !important;
   text-align: left !important;
   background: var(--persian-code-block-bg) !important;
-  border-radius: 10px;
+  border-radius: 8px;
   padding: 1.5em;
   overflow-x: auto;
-  border-right: 4px solid var(--md-primary-fg-color);
+  border-left: 3px solid var(--md-primary-fg-color);
   margin: 1.5em 0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
-}
-
-html[dir="rtl"] pre::before {
-  content: '';
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  display: flex;
-  gap: 6px;
 }
 
 html[dir="rtl"] pre code,
 pre code {
-  background-color: transparent !important;
+  background: transparent !important;
   padding: 0;
+  border: none !important;
   direction: ltr !important;
   text-align: left !important;
   color: #abb2bf;
-  border: none;
-  box-shadow: none;
-  font-size: 0.95em;
+  font-size: 0.9em;
   line-height: 1.6;
+  display: block;
+  white-space: pre;
 }
 
 /* Syntax highlighting */
-pre code .hljs-keyword { color: var(--code-keyword); font-weight: 600; }
-pre code .hljs-string { color: var(--code-string); }
-pre code .hljs-function { color: var(--code-function); }
-pre code .hljs-comment { color: var(--code-comment); font-style: italic; }
-pre code .hljs-number { color: var(--code-number); }
-pre code .hljs-title { color: #e06c75; }
-pre code .hljs-params { color: #d19a66; }
-pre code .hljs-built_in { color: #56b6c2; }
+pre code .hljs-keyword,
+pre code .hljs-selector-tag {
+  color: var(--code-keyword);
+  font-weight: 600;
+}
+
+pre code .hljs-string,
+pre code .hljs-attr {
+  color: var(--code-string);
+}
+
+pre code .hljs-function,
+pre code .hljs-title {
+  color: var(--code-function);
+}
+
+pre code .hljs-comment {
+  color: var(--code-comment);
+  font-style: italic;
+}
+
+pre code .hljs-number,
+pre code .hljs-literal {
+  color: var(--code-number);
+}
+
+pre code .hljs-built_in,
+pre code .hljs-operator {
+  color: var(--code-operator);
+}
+
+pre code .hljs-variable,
+pre code .hljs-name {
+  color: var(--code-variable);
+}
 
 /* ================================
-   Table of Contents - Enhanced Numbering
+   Table of Contents - Clear Numbering
    ================================ */
+.md-nav--secondary {
+  border-right: 2px solid var(--persian-border-color);
+  padding-right: 0.5rem;
+}
+
 .md-nav--secondary .md-nav__list {
-  counter-reset: section;
+  counter-reset: toc-section;
 }
 
 .md-nav--secondary .md-nav__item {
-  counter-increment: section;
+  counter-increment: toc-section;
+  margin-bottom: 0.3rem;
+}
+
+.md-nav--secondary .md-nav__item > .md-nav__link {
+  padding-right: 2rem;
+  position: relative;
 }
 
 .md-nav--secondary .md-nav__item > .md-nav__link::before {
-  content: counter(section) ". ";
+  content: counter(toc-section);
+  position: absolute;
+  right: 0;
   font-weight: 700;
   color: var(--md-primary-fg-color);
-  margin-left: 0.5em;
+  background: var(--persian-hover-bg);
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 0.8em;
 }
 
 .md-nav--secondary .md-nav__item .md-nav__list {
-  counter-reset: subsection;
+  counter-reset: toc-subsection;
+  margin-right: 2rem;
+  border-right: 1px solid var(--persian-border-color);
+  padding-right: 0.5rem;
 }
 
 .md-nav--secondary .md-nav__item .md-nav__item {
-  counter-increment: subsection;
+  counter-increment: toc-subsection;
 }
 
 .md-nav--secondary .md-nav__item .md-nav__item > .md-nav__link::before {
-  content: counter(section) "." counter(subsection) " ";
+  content: counter(toc-section) "." counter(toc-subsection);
+  background: transparent;
   font-weight: 600;
   color: var(--md-primary-fg-color--light);
+  width: auto;
 }
 
 .md-nav--secondary .md-nav__item .md-nav__item .md-nav__list {
-  counter-reset: subsubsection;
+  counter-reset: toc-subsubsection;
 }
 
 .md-nav--secondary .md-nav__item .md-nav__item .md-nav__item {
-  counter-increment: subsubsection;
+  counter-increment: toc-subsubsection;
 }
 
 .md-nav--secondary .md-nav__item .md-nav__item .md-nav__item > .md-nav__link::before {
-  content: counter(section) "." counter(subsection) "." counter(subsubsection) " ";
-  font-weight: 500;
-  font-size: 0.9em;
+  content: counter(toc-section) "." counter(toc-subsection) "." counter(toc-subsubsection);
+  font-size: 0.75em;
   color: var(--persian-text-color);
   opacity: 0.7;
 }
 
 /* ================================
-   Footer Navigation - Enhanced Visibility
+   Footer Navigation - Highly Visible
    ================================ */
+.md-footer {
+  background: transparent;
+  border-top: 1px solid var(--persian-border-color);
+  margin-top: 3rem;
+}
+
 .md-footer__inner {
-  padding: 1.5rem 0;
-  background: linear-gradient(135deg, rgba(78, 142, 247, 0.05) 0%, rgba(255, 107, 107, 0.05) 100%);
-  border-top: 2px solid var(--md-primary-fg-color);
+  padding: 2rem 0;
+  background: var(--persian-card-bg);
 }
 
 .md-footer__link {
   padding: 1.5rem 2rem !important;
   border-radius: 12px;
+  background: linear-gradient(135deg, var(--md-primary-fg-color) 0%, var(--md-primary-fg-color--dark) 100%);
+  color: white !important;
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
   transition: all 0.3s ease;
-  background: var(--persian-card-bg);
-  border: 2px solid var(--persian-border-color);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 0.5rem;
   position: relative;
   overflow: hidden;
 }
@@ -274,26 +299,27 @@ pre code .hljs-built_in { color: #56b6c2; }
 .md-footer__link::before {
   content: '';
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 50%;
+  left: 50%;
   width: 0;
-  height: 100%;
-  background: linear-gradient(135deg, var(--md-primary-fg-color) 0%, var(--md-accent-fg-color) 100%);
-  transition: width 0.3s ease;
-  z-index: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
 }
 
 .md-footer__link:hover::before {
-  width: 100%;
+  width: 300px;
+  height: 300px;
 }
 
 .md-footer__link:hover {
-  border-color: var(--md-primary-fg-color);
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 6px 20px rgba(78, 142, 247, 0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.4);
 }
 
-.md-footer__link:hover * {
+.md-footer__link * {
   color: white !important;
   position: relative;
   z-index: 1;
@@ -301,19 +327,14 @@ pre code .hljs-built_in { color: #56b6c2; }
 
 .md-footer__title {
   font-weight: 700;
-  font-size: 1rem;
-  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
 }
 
 .md-footer__direction {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 800;
-  display: inline-block;
-  transition: transform 0.3s ease;
-}
-
-.md-footer__link:hover .md-footer__direction {
-  transform: scale(1.2);
 }
 
 .md-footer__link--prev .md-footer__direction {
@@ -325,112 +346,21 @@ pre code .hljs-built_in { color: #56b6c2; }
 }
 
 /* ================================
-   Links - Enhanced
-   ================================ */
-html[dir="rtl"] a {
-  color: var(--persian-link-color);
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: all 0.3s ease;
-  font-weight: 500;
-  position: relative;
-}
-
-html[dir="rtl"] a:hover {
-  color: var(--md-primary-fg-color--dark);
-}
-
-.md-content a::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -2px;
-  right: 0;
-  background: linear-gradient(90deg, var(--md-primary-fg-color) 0%, var(--md-accent-fg-color) 100%);
-  transition: width 0.3s ease;
-}
-
-.md-content a:hover::after {
-  width: 100%;
-}
-
-/* ================================
-   Tables - Modern Style
-   ================================ */
-html[dir="rtl"] table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  margin: 1.5em 0;
-  direction: rtl;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-html[dir="rtl"] th {
-  background: linear-gradient(135deg, var(--md-primary-fg-color) 0%, var(--md-primary-fg-color--dark) 100%);
-  color: white;
-  font-weight: 700;
-  padding: 1em;
-  text-align: right;
-}
-
-html[dir="rtl"] td {
-  padding: 0.9em 1em;
-  border-bottom: 1px solid var(--persian-border-color);
-  text-align: right;
-}
-
-html[dir="rtl"] tr:hover {
-  background-color: rgba(78, 142, 247, 0.08);
-}
-
-/* ================================
-   Admonitions - Vibrant
-   ================================ */
-html[dir="rtl"] .admonition {
-  margin: 1.5em 0;
-  padding: 1em 1.5em;
-  border-right: 4px solid var(--md-primary-fg-color);
-  border-left: none;
-  border-radius: 0 8px 8px 0;
-  background: linear-gradient(135deg, rgba(78, 142, 247, 0.08) 0%, rgba(78, 142, 247, 0.03) 100%);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-}
-
-html[dir="rtl"] .admonition.warning {
-  border-right-color: #ff9800;
-  background: linear-gradient(135deg, rgba(255, 152, 0, 0.08) 0%, rgba(255, 152, 0, 0.03) 100%);
-}
-
-html[dir="rtl"] .admonition.danger {
-  border-right-color: #f44336;
-  background: linear-gradient(135deg, rgba(244, 67, 54, 0.08) 0%, rgba(244, 67, 54, 0.03) 100%);
-}
-
-html[dir="rtl"] .admonition.success {
-  border-right-color: #4caf50;
-  background: linear-gradient(135deg, rgba(76, 175, 80, 0.08) 0%, rgba(76, 175, 80, 0.03) 100%);
-}
-
-/* ================================
-   Lesson Cards - Enhanced
+   Lesson Cards - Modern Design
    ================================ */
 .lessons-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 2rem;
+  gap: 1.5rem;
   margin: 2rem 0;
 }
 
 .lesson-card {
-  background: var(--persian-card-bg);
-  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.03) 0%, rgba(124, 58, 237, 0.03) 100%);
+  border-radius: 12px;
   padding: 2rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   border: 2px solid transparent;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -441,20 +371,49 @@ html[dir="rtl"] .admonition.success {
   position: absolute;
   top: 0;
   right: 0;
-  width: 5px;
-  height: 0;
+  width: 4px;
+  height: 100%;
   background: linear-gradient(180deg, var(--md-primary-fg-color) 0%, var(--md-accent-fg-color) 100%);
-  transition: height 0.3s ease;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease;
 }
 
 .lesson-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 28px rgba(78, 142, 247, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.15);
   border-color: var(--md-primary-fg-color);
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, rgba(124, 58, 237, 0.05) 100%);
 }
 
 .lesson-card:hover::before {
-  height: 100%;
+  transform: scaleY(1);
+}
+
+.lesson-card h3 {
+  margin: 0 0 1rem 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+.lesson-card .description {
+  opacity: 0.85;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.lesson-card .read-more {
+  color: var(--md-primary-fg-color);
+  font-weight: 600;
+  text-decoration: none !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: gap 0.3s ease;
+}
+
+.lesson-card .read-more:hover {
+  gap: 0.8rem;
 }
 
 .lesson-badge {
@@ -469,36 +428,89 @@ html[dir="rtl"] .admonition.success {
 }
 
 .lesson-badge.available {
-  background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
   color: white;
-  box-shadow: 0 2px 6px rgba(76, 175, 80, 0.3);
+  box-shadow: 0 2px 6px rgba(16, 185, 129, 0.3);
 }
 
 .lesson-badge.coming-soon {
-  background: linear-gradient(135deg, #ff9800 0%, #e65100 100%);
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
   color: white;
-  box-shadow: 0 2px 6px rgba(255, 152, 0, 0.3);
+  box-shadow: 0 2px 6px rgba(245, 158, 11, 0.3);
+}
+
+/* ================================
+   Links
+   ================================ */
+html[dir="rtl"] a {
+  color: var(--persian-link-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-weight: 500;
+}
+
+html[dir="rtl"] a:hover {
+  color: var(--md-primary-fg-color--dark);
+}
+
+/* ================================
+   Tables
+   ================================ */
+html[dir="rtl"] table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1.5em 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+html[dir="rtl"] th {
+  background: var(--md-primary-fg-color);
+  color: white;
+  font-weight: 700;
+  padding: 1em;
+  text-align: right;
+}
+
+html[dir="rtl"] td {
+  padding: 0.9em 1em;
+  border-bottom: 1px solid var(--persian-border-color);
+  text-align: right;
+}
+
+html[dir="rtl"] tr:hover {
+  background: var(--persian-hover-bg);
+}
+
+/* ================================
+   Admonitions
+   ================================ */
+html[dir="rtl"] .admonition {
+  margin: 1.5em 0;
+  padding: 1em 1.5em;
+  border-right: 4px solid var(--md-primary-fg-color);
+  border-radius: 0 8px 8px 0;
+  background: var(--persian-hover-bg);
 }
 
 /* ================================
    Responsive
    ================================ */
 @media screen and (max-width: 768px) {
-  .md-footer__link {
-    padding: 1.2rem 1.5rem !important;
-  }
-  
-  .md-footer__direction {
-    font-size: 1.5rem;
-  }
-  
   .lessons-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .md-footer__link {
+    margin: 0.3rem;
+    padding: 1.2rem 1.5rem !important;
   }
 }
 
 /* ================================
-   Smooth Animations
+   Smooth Scroll & Selection
    ================================ */
 html {
   scroll-behavior: smooth;
@@ -507,13 +519,4 @@ html {
 ::selection {
   background: var(--md-primary-fg-color);
   color: white;
-}
-
-/* ================================
-   LTR Text Direction Fix
-   ================================ */
-.ltr-text {
-  direction: ltr !important;
-  display: inline-block;
-  unicode-bidi: embed;
 }
