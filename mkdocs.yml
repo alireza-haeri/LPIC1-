@@ -58,7 +58,7 @@ theme:
   # Icons
   icon:
     repo: fontawesome/brands/github
-    logo: material/book-open-page-variant
+    logo: assets/images/logo.svg
   
   # Fonts
   font:
