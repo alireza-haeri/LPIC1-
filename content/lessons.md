@@ -3,7 +3,6 @@
 مسیر یادگیری گام به گام برای دریافت گواهینامه LPIC-1. دروس را به ترتیب مطالعه کنید تا بهترین نتیجه را بگیرید.
 
 ---
-
 <div class="lessons-grid" markdown="1">
 
 <div class="lesson-card" markdown="1">
@@ -40,7 +39,7 @@
 
 <div class="lesson-card" markdown="1">
 
-<span class="lesson-badge coming-soon">به‌زودی</span>
+<span class="lesson-badge available">موجود</span>
 
 ### 101.3 - تغییر Runlevels و Shutdown
 
@@ -48,16 +47,11 @@
 مدیریت Runlevels، Systemd Targets و روش‌های صحیح خاموش/راه‌اندازی مجدد سیستم
 </div>
 
-<span class="read-more" style="opacity: 0.5;">
-در دست تولید...
-</span>
+<a href="../101/101-3-change-runlevels-boot-targets-and-shutdown-or-reboot-the-system/" class="read-more">
+مطالعه درس <span class="arrow">←</span>
+</a>
 
 </div>
-
-<div class="lesson-card" markdown="1">
-
-<span class="lesson-badge coming-soon">به‌زودی</span>
-
 ### 102.1 - طراحی هارد دیسک
 
 <div class="description">
