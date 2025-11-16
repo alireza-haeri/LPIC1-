@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://alireza-haeri.github.io/Lpic-Persian/</loc>
+         <lastmod>2025-11-16</lastmod>
+    </url>
+    <url>
+         <loc>https://alireza-haeri.github.io/Lpic-Persian/lessons/</loc>
+         <lastmod>2025-11-16</lastmod>
+    </url>
+    <url>
+         <loc>https://alireza-haeri.github.io/Lpic-Persian/101/101-1-hardware-settings/</loc>
+         <lastmod>2025-11-16</lastmod>
+    </url>
+    <url>
+         <loc>https://alireza-haeri.github.io/Lpic-Persian/101/101-2-boot-the-system/</loc>
+         <lastmod>2025-11-16</lastmod>
+    </url>
+    <url>
+         <loc>https://alireza-haeri.github.io/Lpic-Persian/101/101-3-change-runlevels-boot-targets-and-shutdown-or-reboot-the-system/</loc>
+         <lastmod>2025-11-16</lastmod>
+    </url>
+    <url>
+         <loc>https://alireza-haeri.github.io/Lpic-Persian/102/102-1-design-hard-disk-layout/</loc>
+         <lastmod>2025-11-16</lastmod>
+    </url>
+    <url>
+         <loc>https://alireza-haeri.github.io/Lpic-Persian/102/102-2-install-a-boot-manager/</loc>
+         <lastmod>2025-11-16</lastmod>
+    </url>
+    <url>
+         <loc>https://alireza-haeri.github.io/Lpic-Persian/102/102-3-manage-shared-libraries/</loc>
+         <lastmod>2025-11-16</lastmod>
+    </url>
+</urlset>
